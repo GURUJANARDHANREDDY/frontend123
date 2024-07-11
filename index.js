@@ -43,7 +43,7 @@ mongoose.connect(process.env.DB_URI, {useNewUrlParser:true, useUnifiedTopology:t
     console.log(err);
 });
 
-const PORT = process.env.PORT || 4000; //backend routing port (must be different from frontend port)
+const PORT = process.env.PORT || 5000; //backend routing port (must be different from frontend port)
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}.`);
 })
